@@ -3,65 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portofolio Christiano</title>
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="site-header">
-        <div class="container header-content">
-            <div class="site-branding">
-                <a href="#hero" class="logo">Christiano<span>.</span></a>
-                <span class="site-tagline">Mahasiswa PENS</span>
-        </div>
-            <nav class="navbar">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Project</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Website Christiano</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#sosmed">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container layout-wrapper">
-        <main class="main-content">
-            <section id="hero" class="hero-section">
-            <span class="status-indicator">
-                <span class="dot"></span> Mahasiswa Aktif PENS &bull; NRP 2426600034
-            </span>
-            <h1 class="hero-title">
-                Membangun Solusi Digital & <span class="highlight">Teknologi Internet</span> Masa Depan
-            </h1>
-            <p class="hero-desc">
-                Halo! Saya Christiano, mahasiswa Program Studi Teknologi Rekayasa Internet di Politeknik Elektronika Negeri Surabaya (PENS). Berfokus pada arsitektur jaringan, sistem terdistribusi, dan pengembangan web yang efisien.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#project" class="btn btn-primary">Lihat Projek &darr;</a>
-                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Halo, Saya <span class="sorot-nama">Christiano</span></h1>
+                <p class="subjudul">Mahasiswa PENS</p>
+                <a href="#projects" class="tombol">Lihat Proyek Saya</a>
             </div>
         </section>
 
-    <section id="about" class="about-section">
-        <div class="section-heading">
-            <h2>Tentang Saya</h2>
-            <p>Dedikasi dalam rekayasa internet dan implementasi sistem web</p>
-        </div>
+        <section id="about">
+            <div class="container">
+                <h2 class="judul-bagian">About Me</h2>
+                <div class="daftar-biodata">
+                    <div class="baris-biodata">
+                        <span class="label-biodata">Nama Lengkap</span>
+                        <span class="pemisah">:</span>
+                        <span class="isi-biodata">Christiano Marthinus Bagaskara</span>
+                    </div>
+                    <div class="baris-biodata">
+                        <span class="label-biodata">Kampus</span>
+                        <span class="pemisah">:</span>
+                        <span class="isi-biodata">Politeknik Elektronika Negeri Surabaya (PENS)</span>
+                    </div>
+                    <div class="baris-biodata">
+                        <span class="label-biodata">NRP</span>
+                        <span class="pemisah">:</span>
+                        <span class="isi-biodata">0079306947</span>
+                    </div>
+                    <div class="baris-biodata">
+                        <span class="label-biodata">Email</span>
+                        <span class="pemisah">:</span>
+                        <span class="isi-biodata"><a href="mailto:mbchristiano6@gmail.com">mbchristiano6@gmail.com</a></span>
+                    </div>
+                    <div class="baris-biodata">
+                        <span class="label-biodata">Telepon</span>
+                        <span class="pemisah">:</span>
+                        <span class="isi-biodata"><a href="tel:085230332579">085230332579</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="about-body">
-          <p>
-                Sebagai mahasiswa Teknologi Rekayasa Internet di PENS, saya memadukan pemahaman mendalam tentang infrastruktur protokol internet dengan seni pembuatan antarmuka web modern. Bagi saya, performa, keamanan, dan keterbacaan kode adalah prioritas utama dalam menghadirkan pengalaman digital yang unggul.
-          </p>
-          <p>
-                Di luar perkuliahan, saya aktif mengeksplorasi manajemen jaringan komputer, automasi server berbasis Linux, serta pengembangan antarmuka web semantik yang ringan dan aksesibel.
-          </p>
-          <figure class="profile-figure">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80" alt="Ruang kerja teknologi dan pengembangan jaringan internet">
-          </figure>
-        </div>
-    </section>
+        <section id="skills">
+            <div class="container">
+                <h2 class="judul-bagian">My Skills</h2>
+                <div class="daftar-skill">
+                    <div class="item-skill">Debian</div>
+                    <div class="item-skill">Windows Server</div>
+                    <div class="item-skill">Cisco Packet Tracer</div>
+                    <div class="item-skill">Mikrotik</div>
+                    <div class="item-skill">Ansible</div>
+                    <div class="item-skill">GNS3</div>
+                    <div class="item-skill">Docker</div>
+                    <div class="item-skill">aaPanel</div>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects">
+            <div class="container">
+                <h2 class="judul-bagian">My Projects</h2>
+                <div class="daftar-proyek">
+                    <div class="kartu-proyek">
+                        <img src="img/port.png" alt="Gambar Proyek 1">
+                        <div class="deskripsi-proyek">
+                            <h3>Website Portofolio</h3>
+                            <p>Membuat website profil perusahaan modern untuk meningkatkan citra digital klien.</p>
+                        </div>
+                    </div>
+                    <div class="kartu-proyek">
+                        <img src="img/seafile.png" alt="Gambar Proyek 2">
+                        <div class="deskripsi-proyek">
+                            <h3>Cloud Storage</h3>
+                            <p>Mengembangkan platform e-commerce yang responsif dan fungsional.</p>
+                        </div>
+                    </div>
+                    <div class="kartu-proyek">
+                        <img src="img/aapanel.png" alt="Gambar Proyek 3">
+                        <div class="deskripsi-proyek">
+                            <h3>aaPanel</h3>
+                            <p>Konfigurasi dan manajemen server web menggunakan aaPanel untuk menyederhanakan hosting website, database, dan tugas server lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>  
+        <section id="sosmed">
+            <div class="container">
+                <div class="sosial-media">
+                    <a href="https://www.linkedin.com/in/christiano-mb-921b88362/" data-tooltip="@christiano mb">LinkedIn</a>
+                    <a href="https://github.com/Christiano14" data-tooltip="@Christiano14">GitHub</a>
+                    <a href="https://www.instagram.com/christiano.m.b/" data-tooltip="@christiano.m.b">Instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 Christiano. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-

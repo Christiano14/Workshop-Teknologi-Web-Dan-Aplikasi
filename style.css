@@ -1,0 +1,330 @@
+/* Variabel Warna & Font Dasar */
+:root {
+    --bg-dark: #1a1a2e;
+    --bg-card: #16213e;
+    --primary-accent: #00c2cb;
+    --text-light: #e0e0e0;
+    --text-white: #ffffff;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Reset & Gaya Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.judul-bagian {
+    font-size: 2.5rem;
+    color: var(--text-white);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: rgba(26, 26, 46, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--bg-card);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-accent);
+}
+
+/* Bagian Hero (Home) */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.hero .subjudul {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+}
+
+.sorot-nama {
+    color: var(--primary-accent);
+}
+
+/* Tombol (Button) */
+.tombol {
+    display: inline-block;
+    background-color: var(--primary-accent);
+    color: var(--bg-dark);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tombol:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 194, 203, 0.3);
+}
+
+/* Bagian About Me (Biodata Tanpa Card) */
+.daftar-biodata {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.baris-biodata {
+    display: grid;
+    grid-template-columns: 160px 20px 1fr;
+    font-size: 1.05rem;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.baris-biodata:last-child {
+    border-bottom: none;
+}
+
+.label-biodata {
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.pemisah {
+    color: var(--primary-accent);
+    font-weight: 600;
+}
+
+.isi-biodata {
+    color: var(--text-light);
+}
+
+.isi-biodata a {
+    color: var(--primary-accent);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.isi-biodata a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian Keahlian (Skills) */
+.daftar-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.item-skill {
+    background-color: var(--bg-card);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.item-skill:hover {
+    border-color: var(--primary-accent);
+    color: var(--primary-accent);
+    transform: translateY(-5px);
+}
+
+/* Bagian Proyek (Projects) */
+.daftar-proyek {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.kartu-proyek {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu-proyek:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.kartu-proyek img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.deskripsi-proyek {
+    padding: 1.5rem;
+}
+
+.deskripsi-proyek h3 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Sosial Media & Tooltip */
+.sosial-media {
+    text-align: center;
+}
+
+.sosial-media a {
+    color: var(--text-light);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative; 
+}
+
+.sosial-media a:hover {
+    color: var(--primary-accent);
+}
+
+.sosial-media a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 10px;
+    background-color: var(--primary-accent);
+    color: var(--bg-dark);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translate(-50%, 5px);
+}
+
+.sosial-media a::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 4px;
+    border: 6px solid transparent;
+    border-top-color: var(--primary-accent);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translate(-50%, 5px);
+}
+
+.sosial-media a:hover::after,
+.sosial-media a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--bg-card);
+    margin-top: 2rem;
+}
+
+/* Responsif (Tampilan Tablet & HP) */
+@media (max-width: 768px) {
+    .hero h1 { 
+        font-size: 2.5rem; 
+    }
+    nav ul { 
+        display: none; 
+    }
+    .baris-biodata {
+        grid-template-columns: 140px 15px 1fr;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .baris-biodata {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+    .pemisah {
+        display: none;
+    }
+}
